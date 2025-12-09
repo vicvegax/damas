@@ -17,7 +17,7 @@ class Tabuleiro:
 
     for linha in range(LINHAS):
       for coluna in range(linha % 2, COLUNAS, 2):
-        pygame.draw.rect(janela, CREME, (coluna * QUADRADO, linha * QUADRADO, QUADRADO, QUADRADO))
+        pygame.draw.rect(janela, CREME, (coluna * TAMANHO, linha * TAMANHO, TAMANHO, TAMANHO))
 
   def criar_tabuleiro(self):
     for linha in range(LINHAS):

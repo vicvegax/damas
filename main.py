@@ -1,6 +1,6 @@
 import pygame
 from pygame import *
-from constantes import LARGURA, ALTURA, QUADRADO
+from constantes import LARGURA, ALTURA, TAMANHO
 from jogo import Jogo
 
 # Configuração Inicial
@@ -43,8 +43,8 @@ def main():
 
 def get_posicao_mouse(pos):
   x, y = pos
-  linha = y // QUADRADO
-  coluna = x // QUADRADO
+  linha = y // TAMANHO
+  coluna = x // TAMANHO
   return linha, coluna
 
 if __name__ == '__main__':
